@@ -45,7 +45,7 @@ func (r *DocketService) Get(ctx context.Context, id int64, query DocketGetParams
 	opts = slices.Concat(r.Options, opts)
 	path := fmt.Sprintf("dockets/%v/", id)
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, query, &res, opts...)
-	return
+	return res, err
 }
 
 // Returns a paginated list of dockets. Dockets sit at the top of the case law

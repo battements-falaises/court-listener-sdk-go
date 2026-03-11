@@ -47,7 +47,7 @@ func (r *OpinionService) Get(ctx context.Context, id int64, query OpinionGetPara
 	opts = slices.Concat(r.Options, opts)
 	path := fmt.Sprintf("opinions/%v/", id)
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, query, &res, opts...)
-	return
+	return res, err
 }
 
 // Returns a paginated list of opinions. Each opinion contains the text of a
