@@ -38,7 +38,7 @@ func TestUserAgentHeader(t *testing.T) {
 			},
 		}),
 	)
-	client.Courts.List(context.Background(), courtlistenersdk.CourtListParams{})
+	_, _ = client.Courts.List(context.Background(), courtlistenersdk.CourtListParams{})
 	if userAgent != fmt.Sprintf("CourtListener/Go %s", internal.PackageVersion) {
 		t.Errorf("Expected User-Agent to be correct, but got: %#v", userAgent)
 	}
