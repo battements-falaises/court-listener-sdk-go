@@ -46,11 +46,11 @@ func (r *CourtService) Get(ctx context.Context, id string, query CourtGetParams,
 	opts = slices.Concat(r.Options, opts)
 	if id == "" {
 		err = errors.New("missing required id parameter")
-		return
+		return nil, err
 	}
 	path := fmt.Sprintf("courts/%s/", url.PathEscape(id))
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, query, &res, opts...)
-	return
+	return res, err
 }
 
 // Returns a paginated list of courts. Results can generally be cached as court
