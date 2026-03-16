@@ -1,7 +1,7 @@
 package apijson
 
 import (
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/respjson"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/respjson"
 	"reflect"
 )
 

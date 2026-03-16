@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/court-listener-sdk-go"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/testutil"
-	"github.com/stainless-sdks/court-listener-sdk-go/option"
+	"github.com/battements-falaises/court-listener-sdk-go"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/testutil"
+	"github.com/battements-falaises/court-listener-sdk-go/option"
 )
 
 func TestClusterGetWithOptionalParams(t *testing.T) {

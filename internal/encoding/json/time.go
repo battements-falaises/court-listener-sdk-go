@@ -2,7 +2,7 @@
 package json
 
 import (
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/encoding/json/shims"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/encoding/json/shims"
 	"reflect"
 	"time"
 )

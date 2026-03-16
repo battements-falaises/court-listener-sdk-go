@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/court-listener-sdk-go"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal"
-	"github.com/stainless-sdks/court-listener-sdk-go/option"
+	"github.com/battements-falaises/court-listener-sdk-go"
+	"github.com/battements-falaises/court-listener-sdk-go/internal"
+	"github.com/battements-falaises/court-listener-sdk-go/option"
 )
 
 type closureTransport struct {
