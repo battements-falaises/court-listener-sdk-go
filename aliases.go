@@ -3,8 +3,8 @@
 package courtlistenersdk
 
 import (
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apierror"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/param"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apierror"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/param"
 )
 
 // aliased to make [param.APIUnion] private when embedding

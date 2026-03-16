@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/param"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/param"
 )
 
 var encoders sync.Map // map[reflect.Type]encoderFunc

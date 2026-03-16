@@ -2,8 +2,8 @@ package apijson_test
 
 import (
 	"encoding/json"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apijson"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/respjson"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apijson"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/respjson"
 	"testing"
 )
 

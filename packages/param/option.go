@@ -3,7 +3,7 @@ package param
 import (
 	"encoding/json"
 	"fmt"
-	shimjson "github.com/stainless-sdks/court-listener-sdk-go/internal/encoding/json"
+	shimjson "github.com/battements-falaises/court-listener-sdk-go/internal/encoding/json"
 	"time"
 )
 

@@ -1,4 +1,4 @@
-module github.com/stainless-sdks/court-listener-sdk-go
+module github.com/battements-falaises/court-listener-sdk-go
 
 go 1.22
 

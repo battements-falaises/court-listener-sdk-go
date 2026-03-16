@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apijson"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/requestconfig"
-	"github.com/stainless-sdks/court-listener-sdk-go/option"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/param"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/respjson"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apijson"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/requestconfig"
+	"github.com/battements-falaises/court-listener-sdk-go/option"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/param"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/respjson"
 )
 
 // aliased to make [param.APIUnion] private when embedding

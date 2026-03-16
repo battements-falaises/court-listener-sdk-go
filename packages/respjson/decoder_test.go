@@ -3,8 +3,8 @@ package respjson_test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apijson"
-	rj "github.com/stainless-sdks/court-listener-sdk-go/packages/respjson"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apijson"
+	rj "github.com/battements-falaises/court-listener-sdk-go/packages/respjson"
 	"reflect"
 	"testing"
 )

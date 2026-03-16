@@ -1,8 +1,8 @@
 package paramutil
 
 import (
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/param"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/respjson"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/param"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/respjson"
 )
 
 func AddrIfPresent[T comparable](v param.Opt[T]) *T {

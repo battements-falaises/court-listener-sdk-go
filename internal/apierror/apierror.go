@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apijson"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/respjson"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apijson"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/respjson"
 )
 
 // Error represents an error that originates from the API, i.e. when a request is

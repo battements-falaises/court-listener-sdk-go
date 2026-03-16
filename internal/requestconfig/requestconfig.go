@@ -18,10 +18,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stainless-sdks/court-listener-sdk-go/internal"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apierror"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apiform"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apiquery"
+	"github.com/battements-falaises/court-listener-sdk-go/internal"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apierror"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apiform"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apiquery"
 )
 
 func getDefaultHeaders() map[string]string {

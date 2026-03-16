@@ -10,13 +10,13 @@ import (
 	"slices"
 	"time"
 
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apijson"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/apiquery"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/requestconfig"
-	"github.com/stainless-sdks/court-listener-sdk-go/option"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/pagination"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/param"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/respjson"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apijson"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/apiquery"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/requestconfig"
+	"github.com/battements-falaises/court-listener-sdk-go/option"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/pagination"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/param"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/respjson"
 )
 
 // Opinion clusters grouping related decisions from a single hearing.
