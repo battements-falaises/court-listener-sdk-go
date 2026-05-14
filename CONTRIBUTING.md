@@ -41,7 +41,7 @@ To use a local version of this library from source in another project, edit the 
 directive. This can be done through the CLI with the following:
 
 ```sh
-$ go mod edit -replace github.com/stainless-sdks/court-listener-sdk-go=/path/to/court-listener-sdk-go
+$ go mod edit -replace github.com/battements-falaises/court-listener-sdk-go=/path/to/court-listener-sdk-go
 ```
 
 ## Running tests

@@ -1,7 +1,7 @@
 package apiform
 
 import (
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/param"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/param"
 	"mime/multipart"
 	"reflect"
 )

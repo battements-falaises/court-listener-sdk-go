@@ -7,9 +7,10 @@ import (
 	"net/http"
 	"os"
 	"slices"
+	"strings"
 
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/requestconfig"
-	"github.com/stainless-sdks/court-listener-sdk-go/option"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/requestconfig"
+	"github.com/battements-falaises/court-listener-sdk-go/option"
 )
 
 // Client creates a struct with services and top level methods that help with
@@ -31,7 +32,7 @@ type Client struct {
 // COURT_LISTENER_USERNAME, COURT_LISTENER_PASSWORD, COURT_LISTENER_BASE_URL). This
 // should be used to initialize new clients.
 func DefaultClientOptions() []option.RequestOption {
-	defaults := []option.RequestOption{option.WithEnvironmentProduction()}
+	defaults := []option.RequestOption{option.WithHTTPClient(defaultHTTPClient()), option.WithEnvironmentProduction()}
 	if o, ok := os.LookupEnv("COURT_LISTENER_BASE_URL"); ok {
 		defaults = append(defaults, option.WithBaseURL(o))
 	}
@@ -43,6 +44,14 @@ func DefaultClientOptions() []option.RequestOption {
 	}
 	if o, ok := os.LookupEnv("COURT_LISTENER_PASSWORD"); ok {
 		defaults = append(defaults, option.WithPassword(o))
+	}
+	if o, ok := os.LookupEnv("COURT_LISTENER_CUSTOM_HEADERS"); ok {
+		for _, line := range strings.Split(o, "\n") {
+			colon := strings.Index(line, ":")
+			if colon >= 0 {
+				defaults = append(defaults, option.WithHeader(strings.TrimSpace(line[:colon]), strings.TrimSpace(line[colon+1:])))
+			}
+		}
 	}
 	return defaults
 }

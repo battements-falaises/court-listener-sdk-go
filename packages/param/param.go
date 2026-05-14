@@ -2,7 +2,7 @@ package param
 
 import (
 	"encoding/json"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/encoding/json/sentinel"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/encoding/json/sentinel"
 	"reflect"
 )
 

@@ -1,8 +1,8 @@
 package sentinel_test
 
 import (
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/encoding/json/sentinel"
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/param"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/encoding/json/sentinel"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/param"
 	"reflect"
 	"slices"
 	"testing"

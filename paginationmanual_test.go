@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stainless-sdks/court-listener-sdk-go"
-	"github.com/stainless-sdks/court-listener-sdk-go/internal/testutil"
-	"github.com/stainless-sdks/court-listener-sdk-go/option"
+	"github.com/battements-falaises/court-listener-sdk-go"
+	"github.com/battements-falaises/court-listener-sdk-go/internal/testutil"
+	"github.com/battements-falaises/court-listener-sdk-go/option"
 )
 
 func TestManualPagination(t *testing.T) {

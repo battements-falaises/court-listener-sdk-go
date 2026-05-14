@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stainless-sdks/court-listener-sdk-go/packages/param"
+	"github.com/battements-falaises/court-listener-sdk-go/packages/param"
 )
 
 var encoders sync.Map // map[reflect.Type]encoderFunc
@@ -29,7 +29,7 @@ type encoderField struct {
 }
 
 type encoderEntry struct {
-	reflect.Type
+	typ        reflect.Type
 	dateFormat string
 	root       bool
 	settings   QuerySettings
@@ -42,7 +42,7 @@ type Pair struct {
 
 func (e *encoder) typeEncoder(t reflect.Type) encoderFunc {
 	entry := encoderEntry{
-		Type:       t,
+		typ:        t,
 		dateFormat: e.dateFormat,
 		root:       e.root,
 		settings:   e.settings,
